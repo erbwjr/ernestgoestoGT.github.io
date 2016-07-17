@@ -77,6 +77,9 @@
         <li><a href="#post2"><h3>Week 2</h3></a></li>
         <li><a href="#post3"><h3>Week 3</h3></a></li>
         <li><a href="#post4"><h3>Week 4</h3></a></li>
+        <li><a href="#post5"><h3>Week 5</h3></a></li>
+        <li><a href="#post6"><h3>Week 6</h3></a></li>
+        <li><a href="#post7"><h3>Week 7</h3></a></li>
       </div>
     </div>
       <div class="col-sm-8">
@@ -260,6 +263,7 @@
     via bluetooth before signals can be transmitted.  I attempted to make this connection both with my laptp running Mac OSX and my Android phone
     running Marshmallow.  I was not able to get the Muse to pair properly with either of these devices.  Ivens also attempted to pair this device
     and was not successful.  He was able get the device to pair with a device running Linux.
+    </thead>
   </p>
   <p class="lead" >
     This week I also got the chance to work with the Drone team.  This team has decided to split into two and work towards getting the Parrout Bebop 2
@@ -273,6 +277,118 @@
     There is even a van outside that you can sit in.  Everyone at the table got large Calzones which tasted great.  On Thursday, the University of Florida
     officially got the ability to have PhDs in Human Center Computing.
   </p>
+</div>
+<div class="panel panel-default" id="post5" >
+<h2>
+  Week 5: June 27 - July 3
+</h2>
+<img src="img/emotiv.jpg" class="img-rounded img-responsive" alt="EBWJR" align="left">
+<hr class="intro-divider">
+
+<hr class="intro-divider">
+<p class="lead" >
+  During my fifth week of the DREU program I worked to utilize MATLAB to implement correlation algorithms.  The goal of these algorithms is to use correlation as a method of
+  determining whether or not the user should be authenticated.  The belief is that very similar brain waves will also have high values for correlation.  Although I was able to implement
+  the algorithms this week, I have not been able to properly test how effective they are because I do not have two sets of EEG data from one person. <br> With this in mine I worked to learn how to properly read data from <thead>
+   Emotiv Insight headset.  Typically, these devices output data in raw EEG format which requires  the data from each channel to be processed and converted to alpha, beta, theta,
+   and gamma.  I am not aware of a quick way to do this right now, so I will continue to work towards this.
+</p>
+<p class="lead" >
+  When working to learn to read data I took the time to look at the existing programs
+  meant for processing EEG data including EEGLAB, OpenVibe, and MATLAB.  With EEGLAB
+  we ran into the issue of not being able to read in the file formats that are provided
+  by EMOTIVs headset.  These formats are either edf or csv.  Because of this we have not be able
+  to determine how effective it will be.  OpenVibe has the option to read in csv files,
+  but when attempting to use this platform, data was not read in properly, and would not display.
+  With MATLAB, there is an existing script that allows data to be read directly from the EMOTIV headset
+  in the form of Alpha, Beta Low, Beta High, Theta, and Gamma waves.  However, this only works on Windows
+  or Linux which I do not have.  To make this work, I will install Windows onto a virtual machine and run the script that way.
+</p>
+
+<p class="lead" >
+  On Thursday, I got the chance to head back home to celebrate the Fourth of July with my family.
+  I got to spend time with my grandma and show my family the drones that we have been using for the
+  brain drone project.  I also worked on determining how fast the drone should move forward when is recieves a
+  command from the headset.
+</p>
+</div>
+<div class="panel panel-default" id="post6" >
+<h2>
+  Week 6: July 4 - July 10
+</h2>
+<img src="img/show.jpg" class="img-rounded img-responsive" alt="EBWJR" align="left">
+<hr class="intro-divider">
+
+<hr class="intro-divider">
+<p class="lead" >
+  My sixth week of the DREU program began celebrating the Fourth of July with my family.  After eating barbeque with my family and laughing we went to
+  grab fireworks from our favorite stand.  That night we got the chance to make a fireworks show in the backyard.  The next day, I drove back to Florida
+  to work on research with the teams.
+</p>
+<p class="lead" >
+  This week was show and tell.  Because we had completed over half of the DREU program, the Phd students wanted to see what we had accomplished since all
+  previous meetings had been just saying what we had accomplished.  For the drone team, we decided to record videos to show progress because we didn't want to fly drones
+  in a room full people.  The videos showed improvements in the flight of the DJI Phantom 3 drone.  This drone is utilizing it's camera to run a line following algorithm
+  in order to prevent the drone from drifting to the left or right of a red line.  Originally, this algorithm had errors in code that caused the drone to drift far off
+  the line and not correct.  The drone team and I found a bug in the code that was preventing the drone from following the line.  With this fixed, Bhaveek found different
+   Hue Saturation Value(HSV) values that better identify the read line on the floor.  This improved the line follow algorithm significantly.  This was shown on video.  Also
+   I was able to find a javascript platform called "node-bebop" that allows the Bebop 2 to be flown using the Node.js javascript platform  This allowed us to demonstrate
+    that the Bebop 2 can also be flown using BCI.  This was shown in video.  The links to these videos can be found here.
+</p>
+
+<p class="lead" >
+  On Friday, a man named Woodrow Wilson brought students from the Blueprint Summer Program to get a tour from the lab and hear from Dr. Gilbert, his PhD students, as well as
+  the DREU students.  After these students got to hear encouraging words from Dr. Gilbert about the field of computing and the many things that can be done by people in the
+  computing field, students got the chance to play with NAO robots, and the Emotiv EPOC and Insight to see how we were flying the drone using signals from our brain in the videos
+  that we showed them.  I enjoyed this experience because we all got the chance to share our experiences about how we got to the point we are at today.  I enjoy being able
+  to give students a good amount of perspective on things they are intersted so they don't feel that they are going in blind.
+</p>
+</div>
+<div class="panel panel-default" id="post7" >
+<h2>
+  Week 7: July 11 - June 17
+</h2>
+<img src="img/ua2.jpg" class="img-rounded img-responsive" alt="EBWJR" align="left">
+<hr class="intro-divider">
+<div class="row">
+  <div class="col-md-6">
+    <a href="img/ua.jpg" class="thumbnail">
+      <img src="img/ua.jpg" alt = "DJI Phantom 3 Professional" style="width:150px;height:150px">
+    </a>
+  </div>
+  <div class="col-md-6">
+    <a href="img/ua1.jpg" class="thumbnail">
+      <img src="img/ua1.jpg" alt = "Atlantic Station at Night" style="width:150px;height:150px">
+    </a>
+  </div>
+  <p align="center">Click any thumbnail above to enlarge the image.</p>
+</div>
+<hr class="intro-divider">
+
+<hr class="intro-divider">
+<p class="lead" >
+  This week we got the opportunity to take the drones into the University Audiorium for testing.  Previously we had to do testing downstairs in the CISE building.  This location was not optimal because it
+  had low ceilings causing us to have to fly low to the ground.  This low flight cause the drones flight to be irregular due to wind bouncing off the floors.  In the auditorium, the cielings
+  are significantly higher allowing us to fly the drone higher and eliminate wind issues.  the auditorium is also wide giving us more room for error if that were to occur.  Here we tested
+  different HSV values, heights, and speeds of correction for the line following algorithm.  For height, we found that while increasing the height may prevent wind from affecting the drone,
+  we also found that it made it harder for the drone to follow the line.  We made the decision to pick a height of 1.5 meters to reduce the affect of wind while allowing the drone follow the line.
+  We also determine two HSV values that were the most effective, but this was inconsistent between drone, so furhter testing may need t be done.  We also tested the Bebop 2.  We wanted to
+  see how well the drone moves in a straight line without any line following implemented.  We found that the drone does not move far from the line, but also seems to attempt to correct back to the line
+  on its own.  When the drone moved to the right of the line, the drone points its nose towards the line and moves towards it the next time forward is pressed.
+</p>
+<p class="lead" >
+  This week the Brainwords team worked to collect data to determine if the EMOTIV Insight can be used for authentication.  I was able to get the MATLAB script running on the virtual machine on my
+  laptop.  This allowed us to collect data using a video we had created with four stimuli that we wanted to test.  With this completed, we got data that was inconclusive.  We hoped that we
+  would find a high correlation for data recorded by the same person and low correllation for data from two different people.  However, we were not able to get a high value of correlation for anyone.
+  When looking at the data we found that their were random spikes that may be caused by poinhts were the headset disconnects and reconnects to the Bluetooth receiver.  To eliminate the time that this
+  was able to happen we wanted to separate the recordings and make the sampling time smaller.  Dr. Gilbert suggested that we pick one stimuli, and test it 3 times a day for three days in hopes of
+  getting higher correlation.  We we see how this data works out next week.
+</p>
+
+<p class="lead" >
+  Finally, we got to work on research posters.  We will be presenting research posters for our project on Friday, July 22nd, so we worked on the rough draft for the drone team's poster.  Because
+  the Brainwords team is still working on data, we will not be able to complete a rought draft until next week.  Hopefully, we will have data that follows what we hope to see.
+</p>
 </div>
     </div>
       <div class="col-sm-1"></div>
