@@ -76,8 +76,13 @@
       <h1 align="center">Journal for DREU 2016</h1>
       <div class="col-sm-3" >
         <div class="well affix">
-        <li><a href="#post1"><h3>Week 1</h3></a></li>
+          <ul>
+            <li><a href="#post1"><h3>Week 1</h3></a></li>
         <li><a href="#post2"><h3>Week 2</h3></a></li>
+        <li><a href="#post3"><h3>Week 3</h3></a></li>
+        <li><a href="#post4l"><h3>Week 4</h3></a></li>
+          </ul>
+        
       </div>
     </div>
       <div class="col-sm-8">
@@ -121,12 +126,40 @@
         </p>
 
       </div>
+            <div class="panel panel-default" id="post3" >
+        <h2>
+          Week 3: September 12 - September 18
+        </h2>
+        <hr class="intro-divider">
+        <p class="lead" >
+          During my third week of CREU, I continued to look into fixing the exisiting data collection methods.  After meeting with Philip Wolfe, my previous team member who created the data collection system, we were unable to think of an effective way to send the text data to the Raspberry 
+          Pi 2.  This is an issue because we are only able to transmit data using the I2C communication protocol.  To communicate in this manner, we need to make sure that only one thing is using this at a time in our system.  However, when the Raspberry Pi is attempteing to recieve the text from 
+          the Arduino, the Arduino is also using I2C to read the time from a clock that we are using.  Because the Arduino's pins are mostly filled, we can not use another means of communication to send the text to the Raspberry Pi.
+        </p>
+        <p class="lead" >
+          However, our system also allows a parent or caregiver to control the vehicle using a bluetooth application.  Currently, this application is only responsible for sending signals.  However, before this applicaiton was created, I utilized a Bluetooth Terminal application on android for texting.  This allowed me to send data to our system to move the car, and see text printed out by the Arduino.  Because of this, I believe that we would be able to read in the data via bluetooth, and save it to the phone or tablet of the caregiver or parent.  This would mitigate the hardware issues that we were having. I will look into this next week.
+        </p>
+
+      </div>
+            <div class="panel panel-default" id="post4" >
+        <h2>
+          Week 4: September 19 - September 25
+        </h2>
+        <hr class="intro-divider">
+        <p class="lead" >
+          I have began looking into updating the application that we have so that it can read data in and save it to a text file.  Firstly, I want to determine the best way to make the user aware of whether or not the data is being recorded.  I believe that beneath the buttons, that allow the user to control the car, I could put a green check, or a red x which states whether or not the vehicle is connected.  Once the vehicle is connected to the phone, it should automatically create a text file, and start recording.
+        </p>
+        <p class="lead" >
+          I will begin looking into implementing this in code next week.
+        </p>
+
+      </div>
 
 </div>
     </div>
       <div class="col-sm-1"></div>
     </div>
-
+    <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
