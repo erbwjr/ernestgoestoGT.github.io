@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>DREU 2016 - University of Florida</title>
+    <title>CREU 2016 - Georgia Institute of Technology</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -83,6 +83,7 @@
         <li><a href="#post4"><h3>Week 4</h3></a></li>
         <li><a href="#post5"><h3>Week 5</h3></a></li>
         <li><a href="#post6"><h3>Week 6</h3></a></li>
+        <li><a href="#post7"><h3>Week 7</h3></a></li>
           </ul>
         
       </div>
@@ -181,6 +182,19 @@
         </p>
         <p class="lead" >
           I also received the missing parts that were mentioned last week.  This will allow me to build the Arduino Uno onto a perfboard and improving upon the loose wiring in the car.
+        </p>
+
+      </div>
+      <div class="panel panel-default" id="post6" >
+        <h2>
+          Week 7: October 10 - October 16
+        </h2>
+        <hr class="intro-divider">
+        <p class="lead" >
+          This week I was able to move from a generic text file.  With the changes to the code, when the application is opened, a new text file is created with the date and time that the application was opened.  These files are saved in a folder on the device called "Trials".  Once this is done, the app connects to the car via Bluetooth and waits to receive messages from the device. Each message is appended to the file on a new line.  Initially I ran into issues with saving multiple lines of data, but this was caused by closing the file too soon.  Messages from the car provide information on who is controlling the car, which direction the car is moving, and what time this event occured.  This information is useful because it wil be matched up with video from the trials.  When this information is synced, we will be able to determine if the child is improving in their ability to use the vehicle, and if they are carrying out goal oriented movements. When a child is controlling the car, and they are moving it in the direction of an object or person that they are looking at, this is considered a goal oriented movement.  
+        </p>
+        <p class="lead" >
+          With this issue handled, I will focus on creating an arduino on a protoboard next week to improve the reliability of the wiring in the vehicle. I will also look into determining how to give the user of the app the ability to create a new file when they desire to do so.  This could be useful if they want to start a new recording without having to close the application.  
         </p>
 
       </div>
