@@ -84,6 +84,7 @@
         <li><a href="#post5"><h3>Week 5</h3></a></li>
         <li><a href="#post6"><h3>Week 6</h3></a></li>
         <li><a href="#post7"><h3>Week 7</h3></a></li>
+        <li><a href="#post8"><h3>Week 8</h3></a></li>
           </ul>
         
       </div>
@@ -196,6 +197,17 @@
         <p class="lead" >
           With this issue handled, I will focus on creating an arduino on a protoboard next week to improve the reliability of the wiring in the vehicle. I will also look into determining how to give the user of the app the ability to create a new file when they desire to do so.  This could be useful if they want to start a new recording without having to close the application.  
         </p>
+
+      </div>
+      <div class="panel panel-default" id="post8" >
+        <h2>
+          Week 8: October 17 - October 23
+        </h2>
+        <hr class="intro-divider">
+        <p class="lead" >
+          With the bluetooth data collection method working, I began working to build the Arduino Uno onto a protoboard using instructions provided <a href="https://www.arduino.cc/en/Main/Standalone">here.</a>  Following these instructions I was able to get all of the parts soldered onto a breadboard as instructed, but I ran into an issue when attempting to program the Atmega chip.  I decided to utilize the Sparkfun FT232 as recommended to program the chip.  However, when connecting this device to both a Mac and PC, I neither computer was able to recognize the connection.  To make sure it wasn't the chips that I purchased, I removed the Atmega chip from an Arduino Uno and replaced it with one that I had purchased. In doing this I was able to program the chip without an issue.  Following this, I disconnected the wires from the Sparkfun FT232 to make sure that it wasn't being shorted, but the device was still unrecognizable.  The website provides alternatives to programming the chip that I may utilize until I am able to order a new device from Sparkfun.  I can program the device by placing it onto an Arduino Uno.  This will allow me to connect the Uno Board and program the chip, then place it onto the protoboard.  The only issue with this approach is that it prevents changes in code once the Atmeaga chip is soldered to the board.  However, I could use the approach provided at <a href="https://www.arduino.cc/en/Tutorial/ArduinoToBreadboard">this link.</a> to program the chip using an Arduino Uno board with the Atmega chip removed.  This is the most favorable programming alternative.
+        </p>
+
 
       </div>
 
