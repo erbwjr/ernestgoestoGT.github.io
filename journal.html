@@ -85,6 +85,7 @@
         <li><a href="#post6"><h3>Week 6</h3></a></li>
         <li><a href="#post7"><h3>Week 7</h3></a></li>
         <li><a href="#post8"><h3>Week 8</h3></a></li>
+        <li><a href="#post9"><h3>Week 9/h3></a></li>
           </ul>
         
       </div>
@@ -206,6 +207,17 @@
         <hr class="intro-divider">
         <p class="lead" >
           With the bluetooth data collection method working, I began working to build the Arduino Uno onto a protoboard using instructions provided <a href="https://www.arduino.cc/en/Main/Standalone">here.</a>  Following these instructions I was able to get all of the parts soldered onto a breadboard as instructed, but I ran into an issue when attempting to program the Atmega chip.  I decided to utilize the Sparkfun FT232 as recommended to program the chip.  However, when connecting this device to both a Mac and PC, I neither computer was able to recognize the connection.  To make sure it wasn't the chips that I purchased, I removed the Atmega chip from an Arduino Uno and replaced it with one that I had purchased. In doing this I was able to program the chip without an issue.  Following this, I disconnected the wires from the Sparkfun FT232 to make sure that it wasn't being shorted, but the device was still unrecognizable.  The website provides alternatives to programming the chip that I may utilize until I am able to order a new device from Sparkfun.  I can program the device by placing it onto an Arduino Uno.  This will allow me to connect the Uno Board and program the chip, then place it onto the protoboard.  The only issue with this approach is that it prevents changes in code once the Atmeaga chip is soldered to the board.  However, I could use the approach provided at <a href="https://www.arduino.cc/en/Tutorial/ArduinoToBreadboard">this link.</a> to program the chip using an Arduino Uno board with the Atmega chip removed.  This is the most favorable programming alternative.
+        </p>
+
+
+      </div>
+      <div class="panel panel-default" id="post9" >
+        <h2>
+          Week 9: October 24 - October 30
+        </h2>
+        <hr class="intro-divider">
+        <p class="lead" >
+          This week, I decided to order knew chips to allow serial communication between the Atmega chip and a computer so that these chips can be programmed.  While waiting on this, my focus was on working with the existing setup of the car to prepare it for a demonstration that would take place on Tuesday, October 25th.  In doing this, I ran into an issue with a library that I had been utilizing to read time from a real time clock. When opening my existing program in the Arduino IDE, one of the data type for one of the variables utilized for reading time was not recognized as a type.  Because this would not affect the demonstration, I decided to comment out the portion of the code that was preventing it from compiling and address this at a later time.  With this code commented, my focus was on issues with the motor controls.  With the way that the code is structured, if the joystick is not being moved, the actuator is supposed to center the wheels.  If the joystick is moved to the left or the right, the wheels should be turned in that respective direction.  However, the wheels consistently pointed to the right.  Debugging allowed me to determine that this was due to issues with the battery.  The program utilizes the reading from the actuator's potentiometer to determine whether it is extended, or retracted, and how far it has gone in either direction.  The value is dependent upon the battery being used. When the battery is working properly, the values for extension and retraction ranged from around 200 - 600.  However,  in the current state of the battery, the values range between 200 - 230.  This prevents the existing algorithm from working properly and being able to determine whether to extend or retract the actuator. In hopes that this was an issue of the battery simply being drained, I charged the battery overnight.  This improved the values some, but did not provide enough variation in the values to allow them to be utilized to correct the algorithm.  I am not currently sure what may have caused these issues with battery.
         </p>
 
 
