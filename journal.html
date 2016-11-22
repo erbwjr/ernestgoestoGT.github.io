@@ -222,6 +222,38 @@
 
 
       </div>
+       <div class="panel panel-default" id="post10" >
+        <h2>
+          Week 10: October 31 - November 6
+        </h2>
+        <hr class="intro-divider">
+        <p class="lead" >
+          With the demonstration in the past, I went back to focusing on building the Arduino Uno onto the perfobard.  I also looked into the issues that I was having with libraries utilized for reading the current time from a real time clock.  I was able to correct this issue by downgrading the Arduino IDE from version 1.6.12 to 1.6.10.  This allowed the Time.h library to be used in the code along with a variable of type tmelements_t.  This variable type was not recognized with the update.  This week, we also recieved the new chips to allow serial communication between the computer and the Atmega chip.  While the computer recognizes these new chips, I was unable to program the Atmega chip connected to the perfboard.  However, I was also unable to program an Arduino Uno using my computer.   I am under the impression that a software update may have caused this issue as I have had issues with software update making software function improperly in the past.
+        </p>
+
+
+      </div>
+       <div class="panel panel-default" id="post11" >
+        <h2>
+          Week 11: November 7 - November 13
+        </h2>
+        <hr class="intro-divider">
+        <p class="lead" >
+          This week, I wanted be sure that my computer was the issue by attempting to upload programs to the perfboard and origianl Arduino Uno using Windows devices.  In doing this, I ran into issues with older model Windows devices.  In an attempt to update the Arduino IDE to 1.6.10, the installer failed repeatedly.  When moving to another windows laptop, I recieved sync errors which prevented the chip from being able to program the perfboard.  I also recieved this same issue with the normal Arduino.  However, I realized, that the issues with the normal Arduino was simply user error.  When testing the new Atmega chips that I purchased, I removed the chip from the normal Arduino to make sure that the chips I purchased were already bootloaded, and would work as expected.  However, when placing the original chip back into the device, I placed it in the wrong orientation.  When I fixed this, I was able to upload programs to the Arduino Uno as expected. This week I also wanted to look more into the battery issues.  In the lab, we have two batteries.  Both batteries are 12v, but one has a 2.8A max current draw while the other is around 3.6A.  I wanted to test the battery with the 2.8A current draw because it had not been utilized in the vehicle, which means that it should not be degraded.  I charged this battery for a day, and then tested it.  When testing this battery, the motor was unable to turn fast enough to move the car.  The front wheels were able to turn.  I wanted, to continue testing the 3.6A battery by charging it over the weekend.       </p>
+
+
+      </div>
+       <div class="panel panel-default" id="post12" >
+        <h2>
+          Week 12: November 14 - November 20
+        </h2>
+        <hr class="intro-divider">
+        <p class="lead" >
+          This week, I focused mainly on applying for the Ford Foundation Fellowship.  With this task completed, I revisisted the tests with the 3.6A battery.  After charging it for two days, the battery was finally able to drive the car forward.  However, it was not moving at the max speed of the car's motor.  To make sure that the battery is the issue, and not a burnt out motor, or poor circuitry, I am ordering a new battery.  If this proves to be the issue, there is no justification for continuing to attempt to build an Arduino on a perfboard.  Working towards this task would take away from time that could be used to clean up the existing design to ensure that it can be used by anyone who comes into the lab and is curious about the capabilities of this vehicle...
+        </p>
+
+
+      </div>
 
 </div>
     </div>
